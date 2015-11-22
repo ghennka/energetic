@@ -14,6 +14,10 @@ $router->group(['namespace' => 'Frontend'], function () use ($router)
 	require(__DIR__ . "/Routes/Frontend/Frontend.php");
 	require(__DIR__ . "/Routes/Frontend/Access.php");
 });
+$router->group(['namespace' => 'Binaryk'], function () use ($router)
+{
+	require(__DIR__ . "/Routes/Binaryk/Index.php");
+});
 
 /**
  * Backend Routes
