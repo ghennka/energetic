@@ -55,6 +55,7 @@ angular.module('app').controller('AppCtrl', ['$scope', '$http', '$localStorage',
     };
 
     $scope.setLang = function(langKey) {
+      console.log(langKey);
       $translate.use(langKey);
     };
   }
